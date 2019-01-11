@@ -19,7 +19,8 @@
     neotree
     scala-mode
     go-mode
-    elpy))
+    elpy
+    rust-mode))
 
 (mapc #'(lambda (package)
     (unless (package-installed-p package)
