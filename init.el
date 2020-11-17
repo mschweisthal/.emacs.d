@@ -33,7 +33,6 @@
 ;;;; inhibit at startup
 (setq fancy-splash-image nil)
 (setq inhibit-splash-screen t)
-(setq inhibit-startup-message t)
 (setq inhibit-startup-echo-area-message t)
 (setq initial-scratch-message "")
 (setq inhibit-startup-message t) ;; hide the startup message
@@ -75,7 +74,7 @@
     (add-to-list 'default-frame-alist
     (cons 'height (/ (- (x-display-pixel-height) 200)
              (frame-char-height)))))))
-(set-frame-size)
+;(set-frame-size)
 
 ;; replace yes-no
 (fset 'yes-or-no-p 'y-or-n-p)
